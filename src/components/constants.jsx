@@ -11,15 +11,18 @@ export function Movies({ movie }) {
       }}
     >
       <img
-        className="h-20 "
-        src={`${movie.backdrop_path}`}
+        className="h-20 w-20 "
+        src={`${
+          movie.Poster ||
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HFvj_Y2D5kMYGUBij4oWHdaA2F519i0z_m4G2GR8ZHes6a_iSzFejERD7rdq7alSuVQ&usqp=CAU"
+        }`}
         alt={`${movie.title} poster`}
       ></img>
       <div className="flex flex-col gap-3">
         <label className="">
           <strong>{movie.title}</strong>
         </label>
-        <label className=" text-left">📅 {movie.Year}</label>
+        <label className=" text-left">📅 {movie.release_date}</label>
       </div>
     </div>
   );

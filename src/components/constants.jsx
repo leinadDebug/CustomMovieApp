@@ -7,7 +7,7 @@ export function Movies({ movie }) {
     <div
       className="flex gap-6 p-3 m-4 hover:bg-[#18313a] duration-500 transition-colors rounded-md"
       onClick={() => {
-        navigate(`/movies/${movie.Title}`);
+        navigate(`/movies/${movie.title}`);
       }}
     >
       <img
@@ -17,7 +17,7 @@ export function Movies({ movie }) {
       ></img>
       <div className="flex flex-col gap-3">
         <label className="">
-          <strong>{movie.Title}</strong>
+          <strong>{movie.title}</strong>
         </label>
         <label className=" text-left">📅 {movie.Year}</label>
       </div>

@@ -7,7 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 
-export default function WatchBox({ movies }) {
+export default function WatchMovies({ movies }) {
   const [isClicked, setClicked] = useState(true);
   console.log(movies);
 
@@ -19,7 +19,7 @@ export default function WatchBox({ movies }) {
     <div className="flex flex-col justify-end m-2 p-3 pb-5 gap-3  rounded-lg">
       <div className="bg-slate-800 p-6 flex flex-col rounded-md">
         <button
-          className="rounded-full bg-[#3da6d3] text-white px-2 w-fit ml-auto"
+          className="rounded-full bg-[#3DA6D3] text-white px-2 w-fit ml-auto"
           onClick={handleClick}
         >
           {isClicked ? "-" : "+"}
